@@ -1,0 +1,20 @@
+{
+  "name": "songspector",
+  "version": "1.0.0",
+  "description": "Displays information about a song like lyrics, related videos, etc.",
+  "main": "index.js",
+  "author": "Mitko Georgiev <omnichronous@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "blendid": "^4.3.1",
+    "genius-api": "^0.4.1",
+    "genius-wrapi": "^0.1.0",
+    "jquery": "^3.2.1",
+    "lastfm": "git+https://github.com/omnichronous/lastfm-node",
+    "lyricist": "^2.2.2",
+    "metalminer": "git+https://github.com/omnichronous/metalminer",
+    "node-genius": "^1.1.0",
+    "youtube-api": "^2.0.9",
+    "youtube-node": "^1.3.2"
+  }
+}

@@ -1,0 +1,71 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block title %}SongSpector{% endblock %}
+
+{% block content %}
+  <div class="ui borderless main menu">
+    <div class="ui text container">
+      <div href="#" class="header item">
+        <img class="logo" src="images/logo.svg">
+        SongSpector
+      </div>
+    </div>
+  </div>
+
+  <div class="ui text container">
+    <div class="ui segment">
+
+      <!-- Search area -->
+      <div class="ui left icon fluid action input">
+        <input type="text" name="username" placeholder="Last.fm username..." value="Shaddy">
+        <i class="user icon"></i>
+        <button class="ui button" id="searchButton">Search</button>
+      </div>
+
+      <!-- Track list area -->
+      <div class="ui relaxed divided list" id="trackList">
+        <div class="template" style="display: none;">
+          <i class="large music middle aligned icon"></i>
+          <div class="content">
+            <a class="header"></a>
+            <div class="description"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui divider"></div>
+
+  <div class="ui text container">
+    <!-- Track list area -->
+    <div class="ui segment" id="lyrics"></div>
+  </div>
+
+  <div class="ui divider"></div>
+
+  <div class="ui text container">
+    <!-- Video list area -->
+    <div class="ui segment" id="videos"></div>
+  </div>
+
+<!--   <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui inverted section divider"></div>
+      <img src="images/logo.svg" class="ui centered mini image">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div> -->
+{% endblock %}
